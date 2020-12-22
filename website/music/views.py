@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here & your functions
 def index(request):
-    HttpResponse("<h1>hello world</h1>")
+    return render(request, 'music/index.html')
+    #HttpResponse("<h1>hello world</h1>")
